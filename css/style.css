@@ -249,7 +249,6 @@ section {
 .profile-image {
     width: 100%;
     max-width: 300px;
-    height: 400px;
     background: #f5f5f5;
     border-radius: 15px;
     display: flex;
