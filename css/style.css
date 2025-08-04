@@ -504,3 +504,21 @@
                 padding: 1.5rem;
             }
         }
+            .back1{
+                        background-image: url(/portalcelsobarreto-main/img/back1.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+        }
+            .back2{
+                        background-image: url(/portalcelsobarreto-main/img/back2.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+        }
+            .back3{
+                        background-image: url(/portalcelsobarreto-main/img/back3.png);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+        }
