@@ -28,7 +28,8 @@ header {
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 4px solid transparent;
+    border-image: linear-gradient(90deg, #4ea5d9, #8b7ca3) 1;
 }
 
 nav {
@@ -58,7 +59,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #000000;
+    color: #4ea5d9;
 }
 
 .nav-links a::after {
@@ -68,7 +69,7 @@ nav {
     height: 2px;
     bottom: -5px;
     left: 50%;
-    background: #000000;
+    background: linear-gradient(90deg, #4ea5d9, #8b7ca3);
     transition: all 0.3s ease;
     transform: translateX(-50%);
 }
@@ -109,8 +110,8 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 30% 50%, rgba(0, 0, 0, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 70% 20%, rgba(0, 0, 0, 0.03) 0%, transparent 50%);
+    background: radial-gradient(circle at 20% 30%, rgba(78, 165, 217, 0.06) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(139, 124, 163, 0.04) 0%, transparent 40%);
     z-index: 1;
 }
 
@@ -135,22 +136,33 @@ nav {
     margin-bottom: 2rem;
 }
 
+.celsaodamassa {
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-size: 1.2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e5e5;
+}
+
 .cta-button {
     display: inline-block;
     padding: 12px 30px;
-    background: #000000;
+    background: linear-gradient(135deg, #4ea5d9, #8b7ca3);
     color: #ffffff;
     text-decoration: none;
     border-radius: 25px;
     transition: all 0.3s ease;
-    border: 1px solid #000000;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #4ea5d9;
+    box-shadow: 0 4px 15px rgba(78, 165, 217, 0.2);
 }
 
 .cta-button:hover {
-    background: #333333;
+    background: linear-gradient(135deg, #3a8bb8, #705d82);
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 25px rgba(78, 165, 217, 0.3);
 }
 
 /* Carousel */
@@ -222,8 +234,9 @@ nav {
 }
 
 .indicator.active {
-    background: #000000;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, #4ea5d9, #8b7ca3);
+    box-shadow: 0 0 10px rgba(78, 165, 217, 0.4);
+    border-color: #4ea5d9;
 }
 
 /* Sections */
@@ -274,19 +287,19 @@ section {
 .lattes-link {
     display: inline-block;
     padding: 10px 25px;
-    background: #000000;
+    background: linear-gradient(135deg, #4ea5d9, #8b7ca3);
     color: #ffffff;
     text-decoration: none;
     border-radius: 20px;
     margin-top: 1rem;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(78, 165, 217, 0.2);
 }
 
 .lattes-link:hover {
-    background: #333333;
+    background: linear-gradient(135deg, #3a8bb8, #705d82);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 20px rgba(78, 165, 217, 0.3);
 }
 
 .research-grid {
@@ -328,7 +341,7 @@ section {
 .research-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-    border-color: #000000;
+    border-color: #4ea5d9;
 }
 
 .research-card h3 {
@@ -367,7 +380,8 @@ section {
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    border-left: 4px solid #000000;
+    border-left: 4px solid transparent;
+    border-image: linear-gradient(135deg, #4ea5d9, #8b7ca3) 1;
     margin-bottom: 1.5rem;
     transition: all 0.3s ease;
 }
@@ -421,9 +435,9 @@ section {
 }
 
 .badge.highlight {
-    background: #000000;
+    background: linear-gradient(135deg, #4ea5d9, #8b7ca3);
     color: #ffffff;
-    border-color: #000000;
+    border: none;
 }
 
 .contact-form {
@@ -462,28 +476,28 @@ section {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #000000;
+    border-color: #4ea5d9;
     background: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(78, 165, 217, 0.1);
 }
 
 .submit-btn {
     width: 100%;
     padding: 15px;
-    background: #000000;
+    background: linear-gradient(135deg, #4ea5d9, #8b7ca3);
     color: #ffffff;
     border: none;
     border-radius: 25px;
     font-size: 1.1rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(78, 165, 217, 0.2);
 }
 
 .submit-btn:hover {
-    background: #333333;
+    background: linear-gradient(135deg, #3a8bb8, #705d82);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 20px rgba(78, 165, 217, 0.3);
 }
 
 .contact-info {
